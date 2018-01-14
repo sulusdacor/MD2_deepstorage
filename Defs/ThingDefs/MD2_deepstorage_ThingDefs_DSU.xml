@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <ThingDef ParentName="BuildingBase"  Name="MD2_DSU_Base" Abstract="True">
+    <description>A contained unit for storing large amounts of items.</description>
+    <selectable>true</selectable>
+    <thingClass>ExtendedStorage.Building_ExtendedStorage</thingClass>
+    <constructEffect>ConstructMetal</constructEffect>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <graphicData>
+      <texPath>Buildings/Deep Storage/DSU</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>(2,1)</drawSize>
+    </graphicData>	
+    <building>
+		<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <fixedStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <categories>
+            <li>ResourcesRaw</li>
+            <li>Manufactured</li>
+			<li>StoneChunks</li>
+			<li>FoodRaw</li>
+          </categories>
+		  <thingDefs>
+            <li>Hay</li>
+			<li>Pemmican</li>
+            <li>Kibble</li>
+          </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+    <inspectorTabs>
+      <li>ExtendedStorage.ITab_Storage</li>
+    </inspectorTabs>
+    <designationCategory>Misc</designationCategory>
+    <!-- <staticSunShadowHeight>0.2</staticSunShadowHeight> -->
+	<castEdgeShadows>true</castEdgeShadows>
+    <surfaceType>Item</surfaceType>
+    <size>(2,1)</size>
+    <tickerType>Normal</tickerType>
+	<minifiedDef>MinifiedFurniture</minifiedDef>
+  </ThingDef>
+
+  <ThingDef ParentName="MD2_DSU_Base">
+    <defName>MD2_deepstorage_DSU_mk_i</defName>
+    <label>Deep Storage Unit Mk.I</label>
+	<statBases>
+	 <MaxHitPoints>300</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <WorkToMake>1200</WorkToMake>
+	  <ES_StorageFactor>10</ES_StorageFactor>
+    </statBases>
+    <!--<maxStorage>1000</maxStorage>-->
+    <costList>
+      <Steel>100</Steel>
+      <WoodLog>20</WoodLog>
+    </costList>
+	<researchPrerequisites>
+		<li>MD2_deepstorage_research_DSU_i</li>
+	</researchPrerequisites>
+  </ThingDef>
+  
+  <ThingDef ParentName="MD2_DSU_Base">
+    <defName>MD2_deepstorage_DSU_mk_ii</defName>
+    <label>Deep Storage Unit Mk.II</label>
+	<statBases>
+	 <MaxHitPoints>400</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <WorkToMake>2400</WorkToMake>
+	  <ES_StorageFactor>20</ES_StorageFactor>
+    </statBases>
+    <!--<maxStorage>1500</maxStorage>-->
+    <costList>
+      <Steel>150</Steel>
+      <WoodLog>30</WoodLog>
+    </costList>
+	<researchPrerequisites>
+		<li>MD2_deepstorage_research_DSU_ii</li>
+	</researchPrerequisites>
+  </ThingDef>
+  
+  <ThingDef ParentName="MD2_DSU_Base">
+    <defName>MD2_deepstorage_DSU_mk_iii</defName>
+    <label>Deep Storage Unit Mk.III</label>
+	<statBases>
+	 <MaxHitPoints>500</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <WorkToMake>3400</WorkToMake>
+	  <ES_StorageFactor>30</ES_StorageFactor>
+    </statBases>
+    <!--<maxStorage>1000</maxStorage>-->
+    <costList>
+      <Steel>200</Steel>
+      <WoodLog>40</WoodLog>
+    </costList>
+	<researchPrerequisites>
+		<li>MD2_deepstorage_research_DSU_iii</li>
+	</researchPrerequisites>
+  </ThingDef>
+
+</Defs>
+
+

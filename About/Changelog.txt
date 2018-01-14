@@ -1,0 +1,16 @@
+personal changelog for mod "MD2 deep storage"
+
+- 05/01/2018
+
+	- added short description of DSU to about file
+	- removed shadows static
+	- added edge shadows true
+
+- 11/01/2018
+
+	- made deepstorage prerequisite of each other in research
+
+- 12/01/2018
+
+	- used extended storage code as workaround (now requires extended storage mod to work)
+	- added a few more storage categories to deep storage (foodraw, hay, kibble, pemican, stonechunks)

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ResearchProjectDef>
+		<defName>MD2_deepstorage_research_DSU_i</defName>
+		<label>Deep Storage Unit Mk.I</label>
+		<description>Unlocks researching Deep Storage Units, which are capable of holding large amounts of an item.
+		(10x)
+		</description>
+		<baseCost>500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>1</researchViewX>
+		<researchViewY>1</researchViewY>
+		<tab>MD2_base_ResearchTab</tab>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>MD2_deepstorage_research_DSU_ii</defName>
+		<label>Deep Storage Unit Mk.II</label>
+		<description>Unlocks researching Deep Storage Units, which are capable of holding large amounts of an item.
+		(20x)
+		</description>
+		<baseCost>750</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>2</researchViewX>
+		<researchViewY>1</researchViewY>
+		<tab>MD2_base_ResearchTab</tab>
+		<prerequisites>
+			<li>MD2_deepstorage_research_DSU_i</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>MD2_deepstorage_research_DSU_iii</defName>
+		<label>Deep Storage Unit Mk.III</label>
+		<description>Unlocks researching Deep Storage Units, which are capable of holding large amounts of an item.
+		(30x)
+		</description>
+		<baseCost>1500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>3</researchViewX>
+		<researchViewY>1</researchViewY>
+		<tab>MD2_base_ResearchTab</tab>
+		<prerequisites>
+			<li>MD2_deepstorage_research_DSU_ii</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+</Defs>
