@@ -14,3 +14,7 @@ personal changelog for mod "MD2 deep storage"
 
 	- used extended storage code as workaround (now requires extended storage mod to work)
 	- added a few more storage categories to deep storage (foodraw, hay, kibble, pemican, stonechunks)
+
+- 20/01/2018
+
+	- added modsync
